@@ -6,24 +6,24 @@ import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "orders")
-public class Order {
+public class Orders {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "order_id")
+    @Column(name = "id_compra")
     private Long orderId;
 
-    @Column(name = "user_id", nullable = false)
+    @Column(name = "id_usuario", nullable = false)
     private Long userId;
 
-    @Column(name = "order_date", nullable = false)
+    @Column(name = "fecha_compra", nullable = false)
     private LocalDateTime orderDate;
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "order_status", nullable = false)
+    @Column(name = "estatus_compra", nullable = false)
     private OrderStatus orderStatus;
 
-    @Column(name = "total_price", nullable = false, precision = 10, scale = 2)
+    @Column(name = "precio_total", nullable = false, precision = 10, scale = 2)
     private BigDecimal totalPrice;
 
     // Order status enumeration
@@ -36,10 +36,10 @@ public class Order {
     }
 
     // Constructors
-    public Order() {
+    public Orders() {
     }
 
-    public Order(Long userId, LocalDateTime orderDate, OrderStatus orderStatus, BigDecimal totalPrice) {
+    public Orders(Long userId, LocalDateTime orderDate, OrderStatus orderStatus, BigDecimal totalPrice) {
         this.userId = userId;
         this.orderDate = orderDate;
         this.orderStatus = orderStatus;
