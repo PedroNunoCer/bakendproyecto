@@ -35,3 +35,9 @@ out/
 
 ### VS Code ###
 .vscode/
+
+# Ignorar archivos .env (variables de entorno)
+.env
+
+# Ignorar archivos build.gradle (configuración de Gradle)
+build.gradle

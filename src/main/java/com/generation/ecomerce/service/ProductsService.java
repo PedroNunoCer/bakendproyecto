@@ -38,7 +38,7 @@ public class ProductsService {
         return productsRepository.save(product);
 
     }
-
+/*
     public Products updateProducts(Long id, Products productDetails){ //producto a actualizar recibido del usr
         Optional<Products> optionalProduct=productsRepository.findById(id);
         if(optionalProduct.isEmpty()) throw new IllegalArgumentException("EL producto con el" + id + " no existe");
@@ -48,6 +48,6 @@ public class ProductsService {
         if(productDetails.getQuantity()!=null)product.setQuantity(productDetails.getQuantity());
         return productsRepository.save(product);
     }
-
+*/
 
 }

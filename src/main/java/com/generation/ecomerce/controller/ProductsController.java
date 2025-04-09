@@ -34,8 +34,9 @@ public class ProductsController {
         return productsService.deleteProductsById(id);
 
     }
+    /*
     @PutMapping(path="{productId}")
     public Products updateProductById(@PathVariable("productId")Long id,@RequestBody Products product){
         return productsService.updateProducts(id,product);
-    }
+    }*/
 }

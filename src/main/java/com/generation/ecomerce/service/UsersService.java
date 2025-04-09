@@ -43,7 +43,7 @@ public class UsersService {
         usersRepository.deleteById(id);
         return optionalUser.get();
     }
-
+/*
     public Users updateUserById(Long id, Users userDetails){
         Optional<Users>optionalUser=usersRepository.findById(id);
         if(optionalUser.isEmpty())throw new IllegalArgumentException("El usuario con el id"  + id + " no se encuentra");
@@ -56,7 +56,7 @@ public class UsersService {
             user.setPassword(hashedPassword);
         };
         return usersRepository.save(user);
-    }
+    }*/
 
 }
 
