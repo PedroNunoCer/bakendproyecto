@@ -1,60 +1,38 @@
 package com.generation.ecomerce.model;
 
 import jakarta.persistence.*;
+import lombok.Data;
+import java.time.LocalDateTime;
 
 @Entity
-@Table(name="products")
+@Table(name = "products")
+@Data
 public class Products {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="id",nullable = false,unique = true)
-    private Long id;
-    @Column(name="name",nullable = false)
-    private String name;
-    @Column(nullable = false)
+    @Column(name = "id_producto")
+    private Long idProducto;
+
+    @ManyToOne
+    @JoinColumn(name = "id_categoria", nullable = false)
+    private Categories category;
+
+    @Column(name = "nombre_prod", length = 100, nullable = false)
+    private String nombreProd;
+
+    @Column(name = "descripcion", columnDefinition = "TEXT")
     private String descripcion;
-    @Column(nullable = false)
-    private Integer quantity;
 
-    public Products(Long id, String name, String descripcion, Integer quantity) {
-        this.id = id;
-        this.name = name;
-        this.descripcion = descripcion;
-        this.quantity = quantity;
-    }
+    @Column(name = "precio", precision = 10, scale = 2, nullable = false)
+    private Double precio;
 
-    public Products() {
-    }
+    @Column(name = "stock", nullable = false)
+    private Integer stock;
 
-    public Integer getQuantity() {
-        return quantity;
-    }
+    @Column(name = "imagen", length = 255)
+    private String imagen;
 
-    public void setQuantity(Integer quantity) {
-        this.quantity = quantity;
-    }
-
-    public String getDescripcion() {
-        return descripcion;
-    }
-
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
+    @Column(name = "fecha_creacion", nullable = false)
+    private LocalDateTime fechaCreacion;
 }
+

@@ -3,10 +3,12 @@ package com.generation.ecomerce.service;
 import com.generation.ecomerce.model.Orders;
 import com.generation.ecomerce.repository.OrdersRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
+@Service
 public class OrdersService {
     private final OrdersRepository ordersRepository;
 
