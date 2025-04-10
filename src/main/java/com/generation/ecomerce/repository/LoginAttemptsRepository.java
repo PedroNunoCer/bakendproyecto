@@ -1,4 +1,7 @@
 package com.generation.ecomerce.repository;
 
-public interface LoginAttemptsRepository {
+import com.generation.ecomerce.model.LoginAttempts;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface LoginAttemptsRepository extends JpaRepository<LoginAttempts,Long> {
 }

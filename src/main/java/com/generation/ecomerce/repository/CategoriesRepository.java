@@ -1,4 +1,7 @@
 package com.generation.ecomerce.repository;
 
-public interface CategoriesRepository {
+import com.generation.ecomerce.model.Categories;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CategoriesRepository extends JpaRepository<Categories,Long> {
 }

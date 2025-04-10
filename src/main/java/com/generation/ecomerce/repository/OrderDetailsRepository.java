@@ -1,4 +1,7 @@
 package com.generation.ecomerce.repository;
 
-public interface OrderDetailsRepository {
+import com.generation.ecomerce.model.OrderDetails;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface OrderDetailsRepository extends JpaRepository<OrderDetails,Long> {
 }
