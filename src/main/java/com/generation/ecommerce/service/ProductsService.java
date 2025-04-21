@@ -1,9 +1,9 @@
-package com.generations.ecommerce.service;
+package com.generation.ecommerce.service;
 
-import com.generations.ecommerce.model.Categories;
-import com.generations.ecommerce.model.Products;
-import com.generations.ecommerce.repository.CategoriesRepository;
-import com.generations.ecommerce.repository.ProductsRepository;
+import com.generation.ecommerce.model.Categories;
+import com.generation.ecommerce.model.Products;
+import com.generation.ecommerce.repository.CategoriesRepository;
+import com.generation.ecommerce.repository.ProductsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

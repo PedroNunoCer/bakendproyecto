@@ -1,4 +1,4 @@
-package com.generations.ecommerce;
+package com.generation.ecommerce;
 
 import io.github.cdimascio.dotenv.Dotenv;
 import org.springframework.boot.SpringApplication;

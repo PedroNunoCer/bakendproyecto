@@ -1,7 +1,7 @@
-package com.generations.ecommerce.controller;
+package com.generation.ecommerce.controller;
 
-import com.generations.ecommerce.model.Categories;
-import com.generations.ecommerce.service.CategoriesService;
+import com.generation.ecommerce.model.Categories;
+import com.generation.ecommerce.service.CategoriesService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

@@ -1,4 +1,4 @@
-package com.generations.ecommerce.config;
+package com.generation.ecommerce.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
