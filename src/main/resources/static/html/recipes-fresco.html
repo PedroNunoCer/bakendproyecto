@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lácteos y Derivados Belén</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Lora:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- estilos de lora para titulos   -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/style-recipes.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+</head>
+<body>
+
+    <!-- Main Full Navigation (Visible initially) -->
+    <nav class="navbar navbar-expand-lg navbar-dark" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand animate__animated animate__fadeIn" href="index.html">
+                <img src="../Pic/Logo.PNG" alt="Lácteos y Derivados Belén" class="logostatic">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="mainNavbarContent">
+                <!-- Main Categories -->
+                <ul class="navbar-nav mx-auto category-nav">
+                    <li class="nav-item category-icon">
+                        <a href="../html/index.html" class="nav-icon-link animate__animated animate__fadeIn" data-animation-delay="100">
+                            <i class="fas fa-award"></i>
+                            <span>Inicio</span>
+                        </a>
+                    </li>
+                    <li class="nav-item category-icon">
+                        <a href="../html/productList.html" class="nav-icon-link animate__animated animate__fadeIn" data-animation-delay="200">
+                            <i class="fas fa-cheese"></i>
+                            <span>Producutos</span>
+                        </a>
+                    </li>
+                    <li class="nav-item category-icon">
+                        <a href="../html/Recepies.html" class="nav-icon-link animate__animated animate__fadeIn" data-animation-delay="300">
+                            <i class="fas fa-utensils"></i>
+                            <span>Recetas</span>
+                        </a>
+                    </li>
+                    <li class="nav-item category-icon">
+                        <a href="../html/Contactenos.html" class="nav-icon-link animate__animated animate__fadeIn" data-animation-delay="400">
+                            <i class="fas fa-flag"></i>
+                            <span>Contacto</span>
+                        </a>
+                    </li>
+                    <li class="nav-item category-icon">
+                        <a href="..//html/aboutUs.html" class="nav-icon-link animate__animated animate__fadeIn" data-animation-delay="500">
+                            <i class="fas fa-bread-slice"></i>
+                            <span>Nosotros</span>
+                        </a>
+                    </li>
+                </ul>
+                 <!-- Botones de acción -->
+                 <div class="ms-3 d-flex align-items-center">
+
+                   
+                    <!-- Dropdown de login -->
+                    <div class="dropdown me-3">
+                        <a href="#" class="btn btn-outline-light dropdown-toggle" id="loginDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user me-1"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="loginDropdown">
+                            <li><h6 class="dropdown-header">Cuenta de usuario</h6></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-sign-in-alt me-2"></i>Iniciar sesión</a></li>
+                            <li><a class="dropdown-item" href="registroUsuarios.html"><i class="fas fa-user-plus me-2"></i>Registrarse</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-question-circle me-2"></i>Ayuda</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Botón del carrito -->
+                    <a href="#" class="btn btn-primary position-relative" id="cartBtn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-count">
+                            0
+                        </span>
+                    </a>
+                </div>
+        </div>
+    </nav>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="stickyNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="../html/index.html">
+                <img src="../Pic/Logo.PNG" alt="Lácteos y Derivados Belén" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/productList.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  active" href="../html/Recepies.html">Recetas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/Contactenos.html" >Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/aboutUs.html">Nosotros</a>
+                    </li>
+                </ul>
+                <!-- Botones de acción -->
+                <div class="ms-3 d-flex align-items-center">
+
+                    
+                    <!-- Dropdown de login -->
+                    <div class="dropdown me-3">
+                        <a href="#" class="btn btn-outline-light dropdown-toggle" id="loginDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user me-1"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="loginDropdown">
+                            <li><h6 class="dropdown-header">Cuenta de usuario</h6></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-sign-in-alt me-2"></i>Iniciar sesión</a></li>
+                            <li><a class="dropdown-item" href="registroUsuarios.html"><i class="fas fa-user-plus me-2"></i>Registrarse</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-question-circle me-2"></i>Ayuda</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Botón del carrito -->
+                    <a href="#" class="btn btn-primary position-relative" id="cartBtn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-count">
+                            0
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+ <!-- Título de la sección -->
+ <section class="recipe-header">
+    <div class="recipe-header-title text-center py-3">
+        <h1>Recetas con queso Fresco</h1>
+    </div>
+ <!-- Contenido principal de la receta -->
+<div class="recipe-detail">
+    <div class="container">
+        <div class="row">
+            <div class="recipe-header">
+                <a href="Recepies.html" class="back-btn">
+                    <i class="fas fa-arrow-right"></i>
+                    <span>Regresar</span>
+                </a>
+            </div>
+            <div class=" row-recipe-title">
+                <h1>Enfrijoladas relenas de queso fresco</h1>
+            </div>
+            <!-- Imagen principal de la receta -->
+            <div class="col-md-4">
+                <div class="recipe-main-image">
+                    <img src="/lacteosBelen/Pic/enfrijoladas de queso fresco.png" alt="enfrijoladas " class="img-fluid" >
+                </div>
+            </div>
+            
+            <!-- Detalles de la receta -->
+            <div class="col-md-4">
+                <div class="recipe-ingredients">
+                    <h2>INGREDIENTES</h2>
+                <div class="recipe-meta-info">
+                    <div class="meta-item">
+                        <i class="fas fa-users"></i>
+                        <span>4 porciones</span>
+                        <i class="far fa-clock"></i>
+                        <span>Tiempo: 45 minutos</span>
+                    </div>
+                </div>
+                <br>
+                    <ul>
+                        <li><i class="fas fa-square"></i> 2 tazas de frijoles de olla </li>
+                        <li><i class="fas fa-square"></i> 1/2 taza cebolla morada</li>
+                        <li><i class="fas fa-square"></i> 1/2 chile serrano</li>
+                        <li><i class="fas fa-square"></i> Sal al gusto</li>
+                        <li><i class="fas fa-square"></i> 1 manojo de cilantro</li>
+                        <li><i class="fas fa-square"></i> 1/2 aguacate</li>
+                        <li><i class="fas fa-square"></i> crema acida</li>
+        
+                    </ul>
+                </div>
+            </div>
+            <!-- Modo de preparación -->
+            <div class="col-md-5">
+                <div class="preparation-section">
+                 <h2>MODO DE PREPARACIÓN</h2>
+                    <ol>
+                        <li>En una licuadora agrega las 2 tazas de frijoles, el medio chile y 1 taza de caldo de los frijoles </li>
+                        <li>En un sarten con aceite caliente ve friendo las tortillas por ambos lados y deja escurrir el aceite</li>
+                        <li>Una vez más frías las tortillas rellena con laminas de queso fresco</li>
+                        <li>En otro sarten con 1 cucharadas de aceite vierte los frijoles molidos, sazona con sal</li>
+                        <li>Agrega las tortillas rellenas y cocina por 5 minutos</li>
+                        <li>En un plato coloca las tortillas y vierte la salsa de frijoles por encima</li>
+                        <li>Decora con crema, aguacate, cebolla y cilantro</li>
+
+
+                        <li>Sirve en tostadas y disfruta</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- receta 2 -->
+    <div class="container">
+        <div class="row">
+            <div class=" row-recipe-title">
+                <h1>Queso fresco a la mexicana</h1>
+            </div>
+            <!-- Imagen principal de la receta -->
+            <div class="col-md-4">
+                <div class="recipe-main-image">
+                    <img src="/lacteosBelen/Pic/queso fresco a la mexicana.png" alt="Queso fresco a la mexicana " class="img-fluid" >
+                </div>
+            </div>
+            
+            <!-- Detalles de la receta -->
+            <div class="col-md-4">
+                <div class="recipe-ingredients">
+                    <h2>INGREDIENTES</h2>
+                <div class="recipe-meta-info">
+                    <div class="meta-item">
+                        <i class="fas fa-users"></i>
+                        <span>5 porciones</span>
+                        <i class="far fa-clock"></i>
+                        <span>Tiempo: 30 minutos</span>
+                    </div>
+                </div>
+                <br>
+                    <ul>
+                        <li><i class="fas fa-square"></i> 250 g de queso fresco en cubos</li>
+                        <li><i class="fas fa-square"></i> 2 jitomates medianos (finamente picados)</li>
+                        <li><i class="fas fa-square"></i> 1/4 de cebolla blanca (finamente picada)</li>
+                        <li><i class="fas fa-square"></i> 1/2 chile serrano</li>
+                        <li><i class="fas fa-square"></i> 1 chile serrano o jalapeño (sin semillas si no lo quieres muy picante, finamente picado)                        </li>
+                        <li><i class="fas fa-square"></i> 1/4 de taza de cilantro fresco (picado)</li>
+                        <li><i class="fas fa-square"></i> 1 cda de aceite</li>
+                        <li><i class="fas fa-square"></i> Sal al gusto</li>
+                       
+                    </ul>
+                </div>
+            </div>
+            <!-- Modo de preparación -->
+            <div class="col-md-5">
+                <div class="preparation-section">
+                 <h2>MODO DE PREPARACIÓN</h2>
+                    <ol>
+                        <li> En una tabla pica las verduras en cubos, cebolla, jitomate, y chile serrano</li>
+                        <li>En un sarten con aceite vierte la cebolla, una vez suavizadas agrega el jitomate y los chiles </li>
+                        <li>Agrega los cubos de queso fresco.</li>
+                        <li>Sazona con sal</li>
+                        <li>Agrega el cilantro y mezcla bien</li>
+                        <li>Retira del fuego y sirve caliente</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- receta 3 -->
+    <div class="container">
+        <div class="row">
+            <div class=" row-recipe-title">
+                <h1>Wrap de verduras con queso fresco</h1>
+            </div>
+            <!-- Imagen principal de la receta -->
+            <div class="col-md-4">
+                <div class="recipe-main-image">
+                    <img src="/lacteosBelen/Pic/wrap de queso fresco.png" alt="Ceviche de queso panela " class="img-fluid" >
+                </div>
+            </div>
+            
+            <!-- Detalles de la receta -->
+            <div class="col-md-4">
+                <div class="recipe-ingredients">
+                    <h2>INGREDIENTES</h2>
+                <div class="recipe-meta-info">
+                    <div class="meta-item">
+                        <i class="fas fa-users"></i>
+                        <span>2 porciones</span>
+                        <i class="far fa-clock"></i>
+                        <span>Tiempo: 20 minutos</span>
+                    </div>
+                </div>
+                <br>
+                    <ul>
+                        <li><i class="fas fa-square"></i> 2 tortillas de harina grandes (pueden ser integrales o de espinaca)
+
+                        </li>
+                        <li><i class="fas fa-square"></i>4 rebanadas de jamón (de pavo, cerdo o el que prefieras)</li>
+                        <li><i class="fas fa-square"></i> 150 g de queso fresco (desmoronado o en rebanadas)</li>
+                        <li><i class="fas fa-square"></i> 1/2 zanahoria rallada</li>
+                        <li><i class="fas fa-square"></i> 1/2 pepino en tiras delgadas (tipo juliana)</li>
+                        <li><i class="fas fa-square"></i> 1/2 pimiento rojo en tiras delgadas
+                        </li>
+                        <li><i class="fas fa-square"></i> 1 taza de hojas verdes (lechuga, espinaca o arúgula)
+
+                        </li>
+                        <li><i class="fas fa-square"></i>2 cdas de mayonesa, yogurt natural o hummus (opcional, para untar)</li>
+                        <li><i class="fas fa-square"></i>Sal y pimienta al gusto</li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <!-- Modo de preparación -->
+            <div class="col-md-5">
+                <div class="preparation-section">
+                 <h2>MODO DE PREPARACIÓN</h2>
+                    <ol>
+                        <li>Lava y corta todas las verduras. Desmorona el queso fresco si no lo has hecho aún.</li>
+                        <li>Calienta las tortillas en un sartén por unos segundos para que estén más flexibles.</li>
+                        <li>Unta un poco de mayonesa, yogurt o hummus sobre cada tortilla (esto es opcional, pero le da un toque más jugoso).</li>
+                        <li>Coloca las hojas verdes, luego las verduras en tiras, el jamón, y finalmente el queso fresco.</li>
+                        <li>Agrega sal y pimienta al gusto. Enrolla la tortilla con cuidado formando un wrap. Puedes partirlo a la mitad en diagonal para servirlo más bonito.</li>
+                        <li>Repite el proceso con la otra tortilla.</li>
+                        <li>Sirve los wraps en un plato y acompáñalos con salsa o guacamole si lo deseas.</li>  
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    
+</section>  
+
+    
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Información de la tienda -->
+                <div class="footer-section">
+                    <h3>Lácteos y Derivados</h3>
+                    <p>Productos frescos y de calidad para tu mesa.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/lacteosyderivadosbelen"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <!-- Enlaces rápidos -->
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Inicio</a></li>
+                        <li><a href="productList.html"><i class="fas fa-chevron-right"></i> Productos</a></li>
+                        <li><a href="Recepies.html"><i class="fas fa-chevron-right"></i> Recetas</a></li>
+                        <li><a href="Contactenos.html"><i class="fas fa-chevron-right"></i> Contacto</a></li>
+                        <li><a href="aboutUs.html"><i class="fas fa-chevron-right"></i> Nosotros</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contacto -->
+                <div class="footer-section footer-contact">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-map-marker-alt"></i>Calle Jose María Luis Mora # 13, Col. Nueva Galicia, Las Varas Nayarit</p>
+                    <p><i class="fas fa-phone"></i> 327 272 2065</p>
+                    <p><i class="fas fa-clock"></i>Lun - Vie: 6:30 a.m - 6:30p.m.</p>
+                    <p>Sáb: 6:30a.m. - 3:00p.m</p>
+
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2025 Lácteos y Derivados. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

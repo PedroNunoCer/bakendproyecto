@@ -30,8 +30,8 @@ public class Products {
     @Column(name="stock", nullable = false)
     private Long stock;
     @Lob
-    @Column(name="image", columnDefinition = "BLOB", nullable = true)
-    private byte[] image;
+    @Column(name="image", columnDefinition = "LONGTEXT", nullable = true)
+    private String image;
     @CreationTimestamp
     @Column(updatable = false, columnDefinition = "DATETIME(0)")
     private LocalDateTime date_creation;

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Contacto</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+  
+</head>
+<body>
+
+    <!-- Main Full Navigation (Visible initially) -->
+    <nav class="navbar navbar-expand-lg navbar-dark" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand animate__animated animate__fadeIn" href="index.html">
+                <img src="../Pic/Logo.PNG" alt="Lácteos y Derivados Belén" class="logostatic">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="mainNavbarContent">
+                <!-- Main Categories -->
+                <ul class="navbar-nav mx-auto category-nav">
+                    <li class="nav-item category-icon">
+                        <a href="../html/index.html" class="nav-icon-link animate__animated animate__fadeIn" data-animation-delay="100">
+                            <i class="fas fa-award"></i>
+                            <span>Inicio</span>
+                        </a>
+                    </li>
+                    <li class="nav-item category-icon">
+                        <a href="../html/productList.html" class="nav-icon-link animate__animated animate__fadeIn" data-animation-delay="200">
+                            <i class="fas fa-cheese"></i>
+                            <span>Producutos</span>
+                        </a>
+                    </li>
+                    <li class="nav-item category-icon">
+                        <a href="../html/Recepies.html" class="nav-icon-link animate__animated animate__fadeIn" data-animation-delay="300">
+                            <i class="fas fa-utensils"></i>
+                            <span>Recetas</span>
+                        </a>
+                    </li>
+                    <li class="nav-item category-icon">
+                        <a href="../html/Contactenos.html" class="nav-icon-link animate__animated animate__fadeIn" data-animation-delay="400">
+                            <i class="fas fa-flag"></i>
+                            <span>Contacto</span>
+                        </a>
+                    </li>
+                    <li class="nav-item category-icon">
+                        <a href="..//html/aboutUs.html" class="nav-icon-link animate__animated animate__fadeIn" data-animation-delay="500">
+                            <i class="fas fa-bread-slice"></i>
+                            <span>Nosotros</span>
+                        </a>
+                    </li>
+                </ul>
+                 <!-- Botones de acción -->
+                 <div class="ms-3 d-flex align-items-center">
+
+                   
+                    <!-- Dropdown de login -->
+                    <div class="dropdown me-3">
+                        <a href="#" class="btn btn-outline-light dropdown-toggle" id="loginDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user me-1"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="loginDropdown">
+                            <li><h6 class="dropdown-header">Cuenta de usuario</h6></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-sign-in-alt me-2"></i>Iniciar sesión</a></li>
+                            <li><a class="dropdown-item" href="registroUsuarios.html"><i class="fas fa-user-plus me-2"></i>Registrarse</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-question-circle me-2"></i>Ayuda</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Botón del carrito -->
+                    <a href="#" class="btn btn-primary position-relative" id="cartBtn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-count">
+                            0
+                        </span>
+                    </a>
+                </div>
+        </div>
+    </nav>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="stickyNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="../Pic/Logo.PNG" alt="Lácteos y Derivados Belén" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productList.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Recepies.html">Recetas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Contactenos.html" >Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutUs.html">Nosotros</a>
+                    </li>
+                </ul>
+                <!-- Botones de acción -->
+                <div class="ms-3 d-flex align-items-center">
+ 
+                    <!-- Dropdown de login -->
+                    <div class="dropdown me-3">
+                        <a href="#" class="btn btn-outline-light dropdown-toggle" id="loginDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user me-1"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="loginDropdown">
+                            <li><h6 class="dropdown-header">Cuenta de usuario</h6></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-sign-in-alt me-2"></i>Iniciar sesión</a></li>
+                            <li><a class="dropdown-item" href="registroUsuarios.html"><i class="fas fa-user-plus me-2"></i>Registrarse</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-question-circle me-2"></i>Ayuda</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Botón del carrito -->
+                    <a href="#" class="btn btn-primary position-relative" id="cartBtn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-count">
+                            0
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+<section  id="contactp" class="contacto-section">
+    <div class="header-image-contacto">
+        <h1 class="header-title">Contacto</h1>
+    </div>
+        <div class="contact-container col-md-5 col-lg-4 p-4 rounded shadow mx-auto">
+            <!-- <div class="contacto">
+                <h1 class="header-title">Contacto</h1>
+            </div> -->
+            <form id="contactForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div>
+                
+                <div id="successMessage" class="alert text-center" style="display: none;">
+                    ¡Su mensaje ha sido enviado con éxito!
+                </div>
+                
+                <button type="submit" class="btn btn-primary w-100">Enviar Mensaje</button>
+            </form>
+        </div>
+        
+        <!-- Nueva sección para la sucursal -->
+        <div class="container mt-5 mb-5">
+            <h2 class="text-center mb-4">Nuestra sucursal</h2>
+            <br>
+            <div class="row">
+                <div class="text-start col-md-6">
+                    <p><strong>Visítanos en nuestra sucursal.</strong></p>
+                    <br>
+                    <p><strong><i class="fas fa-map-marker-alt"></i> Ubicación:</strong> Calle Jose María Luis Mora # 13,<br>
+                        Col. Nueva Galicia, Las Varas Nayarit</p>
+                    <p><strong><i class="fas fa-phone-alt"></i> Teléfono:</strong> 327 272 2065</p>
+                </div>
+                <div class="col-md-6">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.220121807651!2d-105.13637232491469!3d21.183412880504875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8420d60e9197e27b%3A0xdeadcedd08a9a8e!2sJos%C3%A9%20Mar%C3%ADa%20Luis%20Mora%20Ote.%2013%2C%20Nueva%20Galicia%2C%2063715%20Las%20Varas%2C%20Nay.!5e0!3m2!1ses!2smx!4v1741283384674!5m2!1ses!2smx" 
+                        width="100%" 
+                        height="300" 
+                        style="border:0; border-radius: 12px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-content">
+            <!-- Información de la tienda -->
+            <div class="footer-section">
+                <h3>Lácteos y Derivados</h3>
+                <p>Productos frescos y de calidad para tu mesa.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/lacteosyderivadosbelen"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+
+            <!-- Enlaces rápidos -->
+            <div class="footer-section">
+                <h4>Enlaces Rápidos</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fas fa-chevron-right"></i> Inicio</a></li>
+                    <li><a href="productList.html"><i class="fas fa-chevron-right"></i> Productos</a></li>
+                    <li><a href="Recepies.html"><i class="fas fa-chevron-right"></i> Recetas</a></li>
+                    <li><a href="Contactenos.html"><i class="fas fa-chevron-right"></i> Contacto</a></li>
+                    <li><a href="aboutUs.html"><i class="fas fa-chevron-right"></i> Nosotros</a></li>
+                </ul>
+            </div>
+
+            <!-- Contacto -->
+            <div class="footer-section footer-contact">
+                <h4>Contacto</h4>
+                <p><i class="fas fa-map-marker-alt"></i>Calle Jose María Luis Mora # 13, Col. Nueva Galicia, Las Varas Nayarit</p>
+                <p><i class="fas fa-phone"></i> 327 272 2065</p>
+                <p><i class="fas fa-clock"></i>Lun - Vie: 6:30 a.m - 6:30p.m.</p>
+                <p>Sáb: 6:30a.m. - 3:00p.m</p>
+
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2025 Lácteos y Derivados. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+<!-- Footer -->
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="../js/main.js"></script>
+    <script src="../js/navbar.js"></script>
+</body>
+</html>

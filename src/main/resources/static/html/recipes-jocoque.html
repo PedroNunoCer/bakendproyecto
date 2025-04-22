@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lácteos y Derivados Belén</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Lora:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- estilos de lora para titulos   -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/style-recipes.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+</head>
+<body>
+
+    <!-- Main Full Navigation (Visible initially) -->
+    <nav class="navbar navbar-expand-lg navbar-dark" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand animate__animated animate__fadeIn" href="index.html">
+                <img src="../Pic/Logo.PNG" alt="Lácteos y Derivados Belén" class="logostatic">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="mainNavbarContent">
+                <!-- Main Categories -->
+                <ul class="navbar-nav mx-auto category-nav">
+                    <li class="nav-item category-icon">
+                        <a href="../html/index.html" class="nav-icon-link animate__animated animate__fadeIn" data-animation-delay="100">
+                            <i class="fas fa-award"></i>
+                            <span>Inicio</span>
+                        </a>
+                    </li>
+                    <li class="nav-item category-icon">
+                        <a href="../html/productList.html" class="nav-icon-link animate__animated animate__fadeIn" data-animation-delay="200">
+                            <i class="fas fa-cheese"></i>
+                            <span>Producutos</span>
+                        </a>
+                    </li>
+                    <li class="nav-item category-icon">
+                        <a href="../html/Recepies.html" class="nav-icon-link animate__animated animate__fadeIn" data-animation-delay="300">
+                            <i class="fas fa-utensils"></i>
+                            <span>Recetas</span>
+                        </a>
+                    </li>
+                    <li class="nav-item category-icon">
+                        <a href="../html/Contactenos.html" class="nav-icon-link animate__animated animate__fadeIn" data-animation-delay="400">
+                            <i class="fas fa-flag"></i>
+                            <span>Contacto</span>
+                        </a>
+                    </li>
+                    <li class="nav-item category-icon">
+                        <a href="..//html/aboutUs.html" class="nav-icon-link animate__animated animate__fadeIn" data-animation-delay="500">
+                            <i class="fas fa-bread-slice"></i>
+                            <span>Nosotros</span>
+                        </a>
+                    </li>
+                </ul>
+                 <!-- Botones de acción -->
+                 <div class="ms-3 d-flex align-items-center">
+
+                   
+                    <!-- Dropdown de login -->
+                    <div class="dropdown me-3">
+                        <a href="#" class="btn btn-outline-light dropdown-toggle" id="loginDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user me-1"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="loginDropdown">
+                            <li><h6 class="dropdown-header">Cuenta de usuario</h6></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-sign-in-alt me-2"></i>Iniciar sesión</a></li>
+                            <li><a class="dropdown-item" href="registroUsuarios.html"><i class="fas fa-user-plus me-2"></i>Registrarse</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-question-circle me-2"></i>Ayuda</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Botón del carrito -->
+                    <a href="#" class="btn btn-primary position-relative" id="cartBtn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-count">
+                            0
+                        </span>
+                    </a>
+                </div>
+        </div>
+    </nav>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="stickyNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="../html/index.html">
+                <img src="../Pic/Logo.PNG" alt="Lácteos y Derivados Belén" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/productList.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  active" href="../html/Recepies.html">Recetas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/Contactenos.html" >Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/aboutUs.html">Nosotros</a>
+                    </li>
+                </ul>
+                <!-- Botones de acción -->
+                <div class="ms-3 d-flex align-items-center">
+
+                    
+                    <!-- Dropdown de login -->
+                    <div class="dropdown me-3">
+                        <a href="#" class="btn btn-outline-light dropdown-toggle" id="loginDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user me-1"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="loginDropdown">
+                            <li><h6 class="dropdown-header">Cuenta de usuario</h6></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-sign-in-alt me-2"></i>Iniciar sesión</a></li>
+                            <li><a class="dropdown-item" href="registroUsuarios.html"><i class="fas fa-user-plus me-2"></i>Registrarse</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#"><i class="fas fa-question-circle me-2"></i>Ayuda</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Botón del carrito -->
+                    <a href="#" class="btn btn-primary position-relative" id="cartBtn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-count">
+                            0
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+ <!-- Título de la sección -->
+ <section class="recipe-header">
+    <div class="recipe-header-title text-center py-3">
+        <h1>Recetas con queso Jocoque</h1>
+    </div>
+ <!-- Contenido principal de la receta -->
+<div class="recipe-detail">
+    <div class="container">
+        <div class="row">
+            <div class="recipe-header">
+                <a href="Recepies.html" class="back-btn">
+                    <i class="fas fa-arrow-right"></i>
+                    <span>Regresar</span>
+                </a>
+            </div>
+            <div class=" row-recipe-title">
+                <h1>Gelatina de frutos rojos con queso jocoque</h1>
+            </div>
+            <!-- Imagen principal de la receta -->
+            <div class="col-md-4">
+                <div class="recipe-main-image">
+                    <img src="/Pic/Gelatina de jocoque.png" alt="Gelatina jocoque " class="img-fluid" >
+                </div>
+            </div>
+            
+            <!-- Detalles de la receta -->
+            <div class="col-md-4">
+                <div class="recipe-ingredients">
+                    <h2>INGREDIENTES</h2>
+                <div class="recipe-meta-info">
+                    <div class="meta-item">
+                        <i class="fas fa-users"></i>
+                        <span>5 porciones</span>
+                        <i class="far fa-clock"></i>
+                        <span>Tiempo: 30 minutos</span>
+                    </div>
+                </div>
+                <br>
+                    <ul>
+                        <li><i class="fas fa-square"></i> 1 taza de frutos rojos (zarzamora, fresa y moras)</li>
+                        <li><i class="fas fa-square"></i> 420 ml de crema para batir</li>
+                        <li><i class="fas fa-square"></i> 750 ml de queso jocoque</li>
+                        <li><i class="fas fa-square"></i> 4 cdas de grenetina sin sabor</li>
+                        <li><i class="fas fa-square"></i> 1 taza de agua</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Modo de preparación -->
+            <div class="col-md-5">
+                <div class="preparation-section">
+                 <h2>MODO DE PREPARACIÓN</h2>
+                    <ol>
+                        <li>En la taza de agua hidratamos la grenetina, para hidratarla se diluye en agua fria y despues se derrite en el microhondas por 10 segundos </li>
+                        <li>En la licuadora agregamos la crema batida, el queso jocoque , lso frutos rojos y la grenetina hidratada</li>
+                        <li>Vierte la mezcla en moldes y refrigera hasta que cuaje</li>
+                        <li>Desmolda y disfruta.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- receta 2 -->
+    <div class="container">
+        <div class="row">
+            <div class=" row-recipe-title">
+                <h1>Ensalada de betabel con jocoque</h1>
+            </div>
+            <!-- Imagen principal de la receta -->
+            <div class="col-md-4">
+                <div class="recipe-main-image">
+                    <img src="/Pic/ceviche de queso panela.png" alt="Ceviche de queso panela " class="img-fluid" >
+                </div>
+            </div>
+            
+            <!-- Detalles de la receta -->
+            <div class="col-md-4">
+                <div class="recipe-ingredients">
+                    <h2>INGREDIENTES</h2>
+                <div class="recipe-meta-info">
+                    <div class="meta-item">
+                        <i class="fas fa-users"></i>
+                        <span>3 porciones</span>
+                        <i class="far fa-clock"></i>
+                        <span>Tiempo: 40 minutos</span>
+                    </div>
+                </div>
+                <br>
+                    <ul>
+                        <li><i class="fas fa-square"></i> 1/2 k betabel</li>
+                        <li><i class="fas fa-square"></i> 1 taza de jocoque</li>
+                        <li><i class="fas fa-square"></i> 2 tazas de espinaca </li>
+                        <li><i class="fas fa-square"></i> 1 taza de almendras picadas</li>
+                        <li><i class="fas fa-square"></i> 1cda de miel</li>
+                      
+                    </ul>
+                </div>
+            </div>
+            <!-- Modo de preparación -->
+            <div class="col-md-5">
+                <div class="preparation-section">
+                 <h2>MODO DE PREPARACIÓN</h2>
+                    <ol>
+                        <li> Pela el betabel y hornea 40 por 180 grados hasta que esté suave.</li>
+                        <li>Listo el betabel saca del horno y deja enfriar, en una tabla cortalo en rebanadas</li>
+                        <li>En una tabla pica la espinaca previamente lavada y desinfectada.</li>    
+                        <li>En recipinete coloca una cama de espinaca, seguido por el betabel corona con queso jocoque, almendra y miel</li>
+                        <li>Sirve y disfruta</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- receta 3 -->
+    <div class="container">
+        <div class="row">
+            <div class=" row-recipe-title">
+                <h1>Humus con jocoque</h1>
+            </div>
+            <!-- Imagen principal de la receta -->
+            <div class="col-md-4">
+                <div class="recipe-main-image">
+                    <img src="/lacteosBelen/Pic/humus-812675_1280.jpg" alt="Humus jocoque" class="img-fluid" >
+                </div>
+            </div>
+            
+            <!-- Detalles de la receta -->
+            <div class="col-md-4">
+                <div class="recipe-ingredients">
+                    <h2>INGREDIENTES</h2>
+                <div class="recipe-meta-info">
+                    <div class="meta-item">
+                        <i class="fas fa-users"></i>
+                        <span>4 porciones</span>
+                        <i class="far fa-clock"></i>
+                        <span>Tiempo: 40 minutos</span>
+                    </div>
+                </div>
+                <br>
+                    <ul>
+                        <li><i class="fas fa-square"></i> 100 gr garbanzo remojado un día antes</li>
+                        <li><i class="fas fa-square"></i>100 gr pasta de ajonjolí o ajonjolí molido</li>
+                        <li><i class="fas fa-square"></i>150 ml jocoque líquido</li>
+                        <li><i class="fas fa-square"></i>100 ml limón</li>
+                        <li><i class="fas fa-square"></i> 40 gr dientes de ajo</li>
+                        <li><i class="fas fa-square"></i> 100 ml aceite de oliva</li>
+                        <li><i class="fas fa-square"></i> 40 gr hierbabuena</li>
+                        <li><i class="fas fa-square"></i> 40 gr perejil</li>
+                        <li><i class="fas fa-square"></i> Al gusto Paprika</li>
+                        <li><i class="fas fa-square"></i> Al gusto Sal</li>
+                        <li><i class="fas fa-square"></i> Pan pita</li>
+                        <li><i class="fas fa-square"></i> 1l de agua</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Modo de preparación -->
+            <div class="col-md-5">
+                <div class="preparation-section">
+                 <h2>MODO DE PREPARACIÓN</h2>
+                    <ol>
+                        <li>En una olla express ponemos los garbanzos que remojamos previamente una noche antes, y revisamos que se cocinen a la perfección.</li>
+                        <li>En la licuadora vertemos los garganzos cocidos con un poco del agua de la cocción</li>
+                        <li>Agrega el queso jocoque junto con la pasta de ajonjolí y al ajo molido</li>
+                        <li>Agrega el aceite de oliva y el jugo de limón, licua hasta que quede una mezcla homogénea</li>
+                        <li>Sirve en un plato y adorna con perejil, hierbabuena picada, sal y paprika al gusto.</li>
+                        <li>Disfruta con pan pita o galletas</li>
+
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    
+</section>  
+
+    
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Información de la tienda -->
+                <div class="footer-section">
+                    <h3>Lácteos y Derivados</h3>
+                    <p>Productos frescos y de calidad para tu mesa.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/lacteosyderivadosbelen"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <!-- Enlaces rápidos -->
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Inicio</a></li>
+                        <li><a href="productList.html"><i class="fas fa-chevron-right"></i> Productos</a></li>
+                        <li><a href="Recepies.html"><i class="fas fa-chevron-right"></i> Recetas</a></li>
+                        <li><a href="Contactenos.html"><i class="fas fa-chevron-right"></i> Contacto</a></li>
+                        <li><a href="aboutUs.html"><i class="fas fa-chevron-right"></i> Nosotros</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contacto -->
+                <div class="footer-section footer-contact">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-map-marker-alt"></i>Calle Jose María Luis Mora # 13, Col. Nueva Galicia, Las Varas Nayarit</p>
+                    <p><i class="fas fa-phone"></i> 327 272 2065</p>
+                    <p><i class="fas fa-clock"></i>Lun - Vie: 6:30 a.m - 6:30p.m.</p>
+                    <p>Sáb: 6:30a.m. - 3:00p.m</p>
+
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2025 Lácteos y Derivados. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
